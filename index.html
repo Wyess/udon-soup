@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+<style>
+  button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    width: 100px;
+  }
+
+  button img {
+    display: block;
+    width: 100%;
+  }
+</style>
+
+</head>
+<body>
+
+<button onClick="play_audio('kitsune')">
+  <img src="img/pct02_1.png" />
+  <audio id="kitsune_audio" src="audio/1_kitsune.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('tanuki')">
+  <img src="img/pct02_2.png" />
+  <audio id="tanuki_audio" src="audio/2_tanuki.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('tempura')">
+  <img src="img/pct02_3.png" />
+  <audio id="tempura_audio" src="audio/3_tempura.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('tsukimi')">
+  <img src="img/pct02_4.png" />
+  <audio id="tsukimi_audio" src="audio/4_tsukimi.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('oniku')">
+  <img src="img/pct02_5.png" />
+  <audio id="oniku_audio" src="audio/5_oniku.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('wakame')">
+  <img src="img/pct02_6.png" />
+  <audio id="wakame_audio" src="audio/18_wakame.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('chikara')">
+  <img src="img/pct02_7.png" />
+  <audio id="chikara_audio" src="audio/19_chikara.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('umeboshi')">
+  <img src="img/pct02_8.png" />
+  <audio id="umeboshi_audio" src="audio/20_umeboshi.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('torinamban')">
+  <img src="img/pct02_9.png" />
+  <audio id="torinamban_audio" src="audio/21_torinamban.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('nabeyaki')">
+  <img src="img/pct02_10.png" />
+  <audio id="nabeyaki_audio" src="audio/9_nabeyaki.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('oden')">
+  <img src="img/pct02_11.png" />
+  <audio id="oden_audio" src="audio/14_oden.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('takikomi')">
+  <img src="img/pct02_12.png" />
+  <audio id="takikomi_audio" src="audio/15_takikomi.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('chawanmushi')">
+  <img src="img/pct02_13.png" />
+  <audio id="chawanmushi_audio" src="audio/16_chawanmushi.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('onabenimo')">
+  <img src="img/pct02_14.png" />
+  <audio id="onabenimo_audio" src="audio/17_onabenimo.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('dashimaki')">
+  <img src="img/pct02_15.png" />
+  <audio id="dashimaki_audio" src="audio/10_dashimaki.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('asaduke')">
+  <img src="img/pct02_16.png" />
+  <audio id="asaduke_audio" src="audio/11_asaduke.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('chahan')">
+  <img src="img/pct02_17.png" />
+  <audio id="chahan_audio" src="audio/12_chahan.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('pasta_nimo')">
+  <img src="img/pct02_18.png" />
+  <audio id="pasta_nimo_audio" src="audio/13_pasta_nimo.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('higashimaru')">
+  <img src="img/higashimaru.png" />
+  <audio id="higashimaru_audio" src="audio/6_higashimaru.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('udon_udon_udon')">
+  <img src="img/udon_udon_udon.png" />
+  <audio id="udon_udon_udon_audio" src="audio/7_udon_udon_udon.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('soup_only')">
+  <img src="img/soup.png" />
+  <audio id="soup_only_audio" src="audio/7_soup_only.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('woo1')">
+  <img src="img/woo.png" />
+  <audio id="woo1_audio" src="audio/8_woo1.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('22_udonx2_udohn')">
+  <img src="img/udon_udon_udohn.png" />
+  <audio id="22_udonx2_udohn_audio" src="audio/22_udonx2_udohn.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('soup_long')">
+  <img src="img/soup_long.png" />
+  <audio id="soup_long_audio" src="audio/23_soup_long.mp3" preload="auto"></audio>
+</button>
+
+<button onClick="play_audio('woo1')">
+  <img src="img/woo.png" />
+  <audio id="woo1_audio" src="audio/8_woo1.mp3" preload="auto"></audio>
+</button>
+
+<script>
+  function play_audio(id) {
+    let audio = document.getElementById(id + '_audio');
+    audio.currentTime = 0;
+　　audio.play();
+  }
+</script>
+</body>
+</html>
+
